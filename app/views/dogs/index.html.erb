@@ -1,0 +1,4 @@
+<h1> Welcome to the Dog Index Page</h1>
+<% @dogs.each do |dog| %>
+<marquee> <%= link_to dog.name, dog_path(dog)  %> </marquee>
+<% end %>
